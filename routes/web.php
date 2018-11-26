@@ -39,6 +39,17 @@ Route::get('jd', function ()
     return view('layouts.jd');
 });
 
+Route::get('testmoph', function ()
+{
+    $container = \App\Container::find(1);
+    foreach ($container->fastports() as $fastport)
+    {
+        dd($fastport);
+    }
+}
+
+);
+
 
 Auth::routes();
 Route::post('login', ['as' => 'post-login', 'uses' => 'Auth\LoginController@postLogin']);
