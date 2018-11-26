@@ -1,0 +1,58 @@
+.box{
+  text-align: center;
+}
+
+.btn{
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0 10px;
+  margin-right: 50px;
+  color: #333;
+  &:hover{
+    background: #eee;
+  }
+}
+
+
+.loading{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  font-size: 30px;
+}
+
+.loading-block{
+  text-align: center;
+
+}
+.qq-face{
+  display: none;
+  ul{
+    li {
+      list-style: none;
+      display: inline-block;
+      widows: 50px;
+      height: 50px;
+      border: 1px solid #fff;
+      margin-bottom: 5px;
+      cursor: pointer;
+      img{
+        widows: 48px;
+        height: 48px;
+      }
+      &:hover{
+        border-color: #06c;
+      }
+    }
+  }
+}
+//.progress{
+//  margin-top: 300px;
+//}
