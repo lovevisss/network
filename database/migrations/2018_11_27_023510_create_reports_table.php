@@ -15,6 +15,8 @@ class CreateReportsTable extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('maintainer');   //维护人
+            $table->text('desc');           //描述
             $table->timestamps();
         });
     }

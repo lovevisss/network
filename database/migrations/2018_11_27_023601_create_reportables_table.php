@@ -15,6 +15,9 @@ class CreateReportablesTable extends Migration
     {
         Schema::create('reportables', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('reportable_id');
+            $table->string('reportable_type');
+            $table->integer('report_id');
             $table->timestamps();
         });
     }
