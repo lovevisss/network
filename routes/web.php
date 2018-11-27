@@ -52,9 +52,11 @@ Route::get('testmoph', function ()
 );
 Route::get('testreport', function ()
 {
-    $container = \App\Container::find(1);
-    $reports = $container->reports;
-    dd($reports);
+//    $container = \App\Container::find(1);
+//    $reports = $container->reports;
+//    dd($reports);
+    $server = \App\Server::find(2);
+    dd($server->reports);
 });
 
 Auth::routes();
