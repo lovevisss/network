@@ -59,6 +59,12 @@ Route::get('testreport', function ()
     dd($server->reports);
 });
 
+Route::get('reversereport', function (){
+    $report = \App\Report::find(1);
+    $container = $report->containers;
+    dd($container);
+});
+
 Auth::routes();
 Route::post('login', ['as' => 'post-login', 'uses' => 'Auth\LoginController@postLogin']);
 Route::get('backend/dashboard',['as' => 'backend.dashboard', 'uses' => 'Backend\DashboardController@index' ]);
