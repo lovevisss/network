@@ -50,7 +50,12 @@ Route::get('testmoph', function ()
 }
 
 );
-
+Route::get('testreport', function ()
+{
+    $container = \App\Container::find(1);
+    $reports = $container->reports;
+    dd($reports);
+});
 
 Auth::routes();
 Route::post('login', ['as' => 'post-login', 'uses' => 'Auth\LoginController@postLogin']);

@@ -18,4 +18,9 @@ class Container extends Model
         return $this->morphMany('App\Fastport', 'fastportable');
     }
 
+    public function reports()
+    {
+        return $this->morphToMany('App\Report', 'reportable');
+    }
+
 }
