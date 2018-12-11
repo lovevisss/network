@@ -41,7 +41,7 @@ Route::get('jd', function ()
 
 Route::get('testmoph', function ()
 {
-    $server = \App\Server::find(1);
+    $server = \App\Container::find(1);
 //    dd($container->fastports);
     foreach ($server->fastports as $fastport)
     {
